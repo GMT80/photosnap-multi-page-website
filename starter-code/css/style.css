@@ -35,15 +35,11 @@ h2 {
 h3 {
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
-
 }
 
 h4 {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16px;
-    text-transform: uppercase;
-
 }
 
 a {
@@ -52,6 +48,12 @@ a {
     color: var(--dark);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    color: var(--primary);
+    opacity: 0.3;
 }
 
 .bordered {
@@ -80,7 +82,7 @@ a {
 /* HEADER CONTENT */
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 72px;
 }
 
@@ -126,7 +128,7 @@ SECTION HERO
 */
 
 section.hero {
-    width: 100vw;
+    width: 100%;
     height: 650px;
 }
 
@@ -192,7 +194,7 @@ section.hero {
 /* SECTION STORIES */
 
 section.stories {
-    width: 100vw;
+    width: 100%;
     height: 600px;
 }
 
@@ -259,7 +261,7 @@ SECTION DESEIGNED FOR EVERYONE
 */
 
 section.designed {
-    width: 100vw;
+    width: 100%;
     height: 600px;
 }
 
@@ -271,7 +273,7 @@ section.designed {
     padding: 0 159px;
     background-color: var(--light);
     color: var(--dark);
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,7 +283,7 @@ section.designed {
 .designed__content__wrapper {
     width: 100%;
     padding: 112px 0;
-    
+
 }
 
 .designed__content__wrapper h1 {
@@ -320,4 +322,71 @@ section.designed {
     width: 830px;
     height: 100%;
     float: left;
+}
+
+/* 
+SECTION CARD 
+*/
+
+section.card {
+    width: 100%;
+    height: 500px;
+    border: 1px solid green;
+}
+
+.card__item {
+    width: calc(100% / 4);
+    height: 100%;
+    padding: 40px;
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.card__item.one {
+    background-image: url('../assets/stories/desktop/mountains.jpg');
+}
+
+.card__item.two {
+    background-image: url('../assets/stories/desktop/cityscapes.jpg');
+}
+
+.card__item.three {
+    background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
+}
+
+.card__item.four {
+    background-image: url('../assets/stories/desktop/architecturals.jpg');
+}
+
+.card__item h3,
+.card__item h4,
+.card__item a {
+    color: var(--light);
+}
+
+.card__item h3 {
+    margin-bottom: 5px;
+}
+
+.card__item h4 {
+    margin-bottom: 16px;
+}
+
+.card__item a {
+    margin-top: 20px;
+    position: relative;
+}
+
+.card__item a::after {
+    content: url('../assets/shared/desktop/arrow.svg');
+    display: inline-block;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    top: 3px;
+    right: -195px;
 }
