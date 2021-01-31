@@ -62,6 +62,20 @@ a {
     background-repeat: no-repeat;
 }
 
+/* .border {
+    width: 400px;
+    padding: 20px;
+    border-top: 10px solid #FFFF00;
+    border-bottom: 10px solid #FF0000;
+    background-image:
+        linear-gradient(#5A77FF, #BC7198, #FFC593),
+        linear-gradient(#5A77FF, #BC7198, #FFC593);
+    background-size: 5px 100%;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+} */
+
 
 /* HEADER CONTENT */
 
@@ -108,7 +122,7 @@ nav>ul>li>a:hover {
 }
 
 /* 
-HERO CONTENT
+SECTION HERO 
 */
 
 section.hero {
@@ -160,7 +174,7 @@ section.hero {
 }
 
 .hero__content__wrapper a::after {
-    content: url('../assets/shared/desktop/arrow.svg'); 
+    content: url('../assets/shared/desktop/arrow.svg');
     display: inline-block;
     height: 20px;
     width: 50px;
@@ -169,8 +183,140 @@ section.hero {
     right: -75px;
 }
 
-
 .hero__image {
+    width: 830px;
+    height: 100%;
+    float: left;
+}
+
+/* SECTION STORIES */
+
+section.stories {
+    width: 100vw;
+    height: 600px;
+}
+
+.stories__image {
+    width: 830px;
+    height: 100%;
+    float: left;
+}
+
+.stories__content {
+    width: 610px;
+    height: 100%;
+    float: left;
+    padding: 135px 0;
+    background-color: var(--light);
+    color: var(--dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories__content__wrapper {
+    width: 100%;
+    padding: 0 112px;
+
+}
+
+.stories__content__wrapper h1 {
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.stories__content__wrapper p {
+    color: var(--dark);
+    font-size: 15px;
+    margin-bottom: 53px;
+}
+
+.stories__content__wrapper a {
+    color: var(--dark);
+    position: relative;
+}
+
+.stories__content__wrapper a:hover {
+    text-decoration: underline;
+}
+
+.stories__content__wrapper a::after {
+    content: url('../assets/shared/desktop/arrow_bk.svg');
+    display: inline-block;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -75px;
+}
+
+/* 
+SECTION DESEIGNED FOR EVERYONE 
+*/
+
+section.designed {
+    width: 100vw;
+    height: 600px;
+}
+
+
+.designed__content {
+    width: 610px;
+    height: 100%;
+    float: left;
+    padding: 0 159px;
+    background-color: var(--light);
+    color: var(--dark);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designed__content__wrapper {
+    width: 100%;
+    padding: 112px 0;
+    
+}
+
+.designed__content__wrapper h1 {
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.designed__content__wrapper p {
+    color: var(--dark);
+    font-size: 15px;
+    margin-bottom: 53px;
+}
+
+.designed__content__wrapper a {
+    color: var(--dark);
+    position: relative;
+}
+
+.designed__content__wrapper a:hover {
+    text-decoration: underline;
+}
+
+.designed__content__wrapper a::after {
+    content: url('../assets/shared/desktop/arrow_bk.svg');
+    display: inline-block;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -75px;
+}
+
+.designed__image {
     width: 830px;
     height: 100%;
     float: left;
