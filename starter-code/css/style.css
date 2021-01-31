@@ -1,6 +1,6 @@
 :root {
     --mainFont: 'DM Sans', sans-serif;
-    --primary: DFDFDF;
+    --primary: #DFDFDF;
     --dark: #000000;
     --light: #ffffff;
 }
@@ -17,10 +17,10 @@ body {
     line-height: 25px;
 
     max-width: 1440px;
-} 
+}
 
 h1 {
-    font-size:40px;
+    font-size: 40px;
     line-height: 48px;
 }
 
@@ -39,4 +39,53 @@ h4 {
     line-height: 16px;
 }
 
-   
+a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--dark);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+header {
+    width: 100vw;
+    height: 72px;
+}
+
+.logo,
+nav,
+.cta {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+nav>ul>li>a {
+    display: inline-block;
+    padding: 0 42px;
+}
+
+nav>ul>li>a:hover {
+    color: var(--primary);
+}
+
+
+.cta a {
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 12px 24px;
+} 
+
+.cta a:hover {
+    color: var(--light);
+    background-color: var(--primary);
+}
