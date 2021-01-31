@@ -1,0 +1,42 @@
+:root {
+    --mainFont: 'DM Sans', sans-serif;
+    --primary: DFDFDF;
+    --dark: #000000;
+    --light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: 15px;
+    line-height: 25px;
+
+    max-width: 1440px;
+} 
+
+h1 {
+    font-size:40px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h4 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+   
