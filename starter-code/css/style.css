@@ -56,27 +56,17 @@ hr {
     opacity: 0.3;
 }
 
-.bordered {
-    background-image:
-        linear-gradient(#5A77FF, #BC7198, #FFC593),
-        linear-gradient(#5A77FF, #BC7198, #FFC593);
-    background-size: 5px 100%;
-    background-repeat: no-repeat;
+.border__left {
+    border-left: 5px solid;
+    border-image-source: linear-gradient(#5A77FF, #BC7198, #FFC593);
+    border-image-slice: 1;
 }
 
-/* .border {
-    width: 400px;
-    padding: 20px;
-    border-top: 10px solid #FFFF00;
-    border-bottom: 10px solid #FF0000;
-    background-image:
-        linear-gradient(#5A77FF, #BC7198, #FFC593),
-        linear-gradient(#5A77FF, #BC7198, #FFC593);
-    background-size: 5px 100%;
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-position: 0 0, 100% 0;
-} */
+.border__bottom {
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(100deg, #5A77FF, #BC7198, #FFC593);
+    border-image-slice: 1;
+}
 
 
 /* HEADER CONTENT */
@@ -331,7 +321,6 @@ SECTION CARD
 section.card {
     width: 100%;
     height: 500px;
-    border: 1px solid green;
 }
 
 .card__item {
@@ -344,6 +333,11 @@ section.card {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    z-index: 100;
 }
 
 .card__item.one {
@@ -389,4 +383,8 @@ section.card {
     position: absolute;
     top: 3px;
     right: -195px;
+}
+
+.card__item:hover {
+    transform: translate(0, -30px);
 }
