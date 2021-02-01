@@ -388,3 +388,39 @@ section.card {
 .card__item:hover {
     transform: translate(0, -30px);
 }
+
+/* 
+SECTION FEATURES 
+*/
+
+section.features {
+    width: 100%;
+    height: 480px;
+    padding: 125px 165px;
+}
+
+.features__item {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.features__item h3 {
+    margin-top: 60px;
+}
+
+.features__item p {
+    font-size: 15px;
+    margin-top: 17px;
+    text-align: center;
+}
+
+ .features__item:last-child p {
+    padding-bottom: 25px;
+} 
